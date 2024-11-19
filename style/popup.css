@@ -1,0 +1,79 @@
+.popup{
+    display: none;
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    max-width: calc(100% - 70px);
+    max-height: 100%;
+    background-color: var(--grey-bg);
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    h2{
+        font-size: 22px;
+        margin-bottom: 15px;
+        @media (min-width: 400px){
+            font-size: 32px;
+        }
+    }
+    p{
+        color: var(--grey-text);
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    &#nieuwsbrief_popup{
+       
+    }
+    &#search_popup{
+        form{
+            display: flex;
+            border: 1px solid var(--black);
+            input{
+                padding-left: calc(50px / 3);
+                padding-right: calc(50px / 3);
+                height: 48px;
+                border: 0;
+                flex: 1;
+            }
+            
+        }
+    }
+    .closePopUp{
+        width: 36px;
+        height: 36px;
+        right: -40px;
+        top: -40px;
+        cursor: pointer;
+        position: absolute;
+        background-color: transparent;
+        &:after{
+            margin-top: 0;
+            opacity: 1;
+            pointer-events: all;
+            z-index: 9999;
+            content: url("./../assets/cross.svg");
+            width: 36px;
+            height: 36px;
+        }
+        &:hover{
+            &:after{
+                content: url("./../assets/redcross.svg");
+            }
+        }
+    }
+}
+body.has-popup{
+    &:before{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #FFFFFFE6;
+        z-index: 10;
+        content: '';
+        top: 0;
+        left: 0;
+    }
+}

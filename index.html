@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Red Pers</title>
         <meta name="description" content="Welkom bij Red Pers">
-        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./style/styles.css">
         <script src="./scripts/script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@
         
                 <ul class="secondary-navigation middlenav">
                     <li><button tabindex="3" class="openNewsletterPopupButton">Nieuwsbrief</button></li>
-                    <li class="menubutton"><a tabindex="3" href="#doneren">Doneren</a></li>
+                    <li><a class="button_menu" tabindex="3" href="#doneren">Doneren</a></li>
                 </ul>
                 <ul class="primary-navigation">
                     <li><a href="./index.html">Voorpagina</a></li>
@@ -80,12 +80,14 @@
             
         </header>
         <main id="content">
+            <h1>TEST</h1>
+            <p class="text_meta">test meta</p>
             <div class="popup" id="search_popup" data-popup="search_popup">
                 <h2>Zoeken</h2>
                 <form action="/search" method="GET">
                     <input type="text" name="q" placeholder="Search...">
 
-                    <button type="submit">
+                    <button type="submit" class="button_search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 512 512" height="25">
                             <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
                         </svg>
@@ -96,7 +98,7 @@
             <div class="popup" id="nieuwsbrief_popup" data-popup="nieuwsbrief_popup">
                 <h2>Nieuwsbrief</h2>
                 <p>Elke drie weken houden we je op de hoogte van wat we schreven en wat we lazen in de Red Pers-nieuwsbrief.</p>
-                <a class="nieuws_btn" href="https://redpers.substack.com/">
+                <a class="button_subscribe" href="https://redpers.substack.com/">
                     <svg aria-hidden="true" class="e-font-icon-svg e-fas-external-link-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
                     Schrijf je in!
                 </a>
@@ -129,7 +131,7 @@
                     </filter>
                 </defs>
             </svg>
-
+            <h3 class="hidden_title">Footermenu</h2>
             <div class="grid_receiver">
 
                 <figure>
@@ -137,7 +139,7 @@
                 </figure>
 
                 <nav class="footernav footernav_left">
-                    <h2>Rubrieken</h2>
+                    <h4>Rubrieken</h4>
                     
                     <ul>
                         <li><a href="./category/rubriek/binnenland/">Binnenland</a></li>
@@ -152,7 +154,7 @@
                 </nav>
 
                 <nav class="footernav footernav_left_mid">
-                    <h2>Navigatie</h2>
+                    <h4>Navigatie</h4>
 
                     <ul>
                         <li><a href="">Colofon</a></li>
@@ -164,7 +166,7 @@
                 </nav>
 
                 <nav class="footernav footernav_right_mid">
-                    <h2>Service</h2>
+                    <h4>Service</h4>
 
                     <ul>
                         <li><a href="">Tip de redactie</a></li>
@@ -173,7 +175,7 @@
                 </nav>
 
                 <nav class="footernav footernav_right">
-                    <h2>Meer Red Pers</h2>
+                    <h4>Meer Red Pers</h4>
 
                     <ul>
                         <li><button class="openNewsletterPopupButton">Nieuwsbrief</button></li>

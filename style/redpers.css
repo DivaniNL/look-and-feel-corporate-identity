@@ -22,6 +22,9 @@
  font-weight: bold;
  font-style: normal;
 }
+*{
+ font-size: 16px;
+}
 
 body {
  /* --- COLORS --- */
@@ -54,28 +57,25 @@ body {
  --font-default: "Inter", sans-serif;
  --font-article: "Tiempos Text", sans-serif;
  --font-heading-important: "Tiempos Headline", sans-serif;
+ 
+/* DEFINE FONT-SIZES FOR TEXTS */ 
+ --font-size-text: 1rem;
+ --font-size-meta: 0.6875rem; /* 11px ÷ 16 = 0.6875rem */
+ --font-size-menu: 0.75rem; /* 12px ÷ 16 = 0.75rem */
+ --font-size-intro: 1.3125rem; /* 21px ÷ 16 = 1.3125rem */
 
- /* DEFINE FONT-SIZES FOR TEXTS*/
-
- --font-size-text: 12px;
- --font-size-meta: 11px;
- --font-size-intro: 21px;
-
- /* DEFINE FONT-SIZES FOR HEADERS*/
-
- --font-size-header-xxl: 48px;
- --font-size-header-xl: 38px;
- --font-size-header-l: 32px;
- --font-size-header-m: 20px;
- --font-size-header-s: 18px;
- --font-size-header-xs: 14px;
+/* DEFINE FONT-SIZES FOR HEADERS */ 
+ --font-size-header-xxl: 3rem; /* 48px ÷ 16 = 3rem */
+ --font-size-header-xl: 2.375rem; /* 38px ÷ 16 = 2.375rem */
+ --font-size-header-l: 2rem; /* 32px ÷ 16 = 2rem */
+ --font-size-header-m: 1.25rem; /* 20px ÷ 16 = 1.25rem */
+ --font-size-header-s: 1.125rem; /* 18px ÷ 16 = 1.125rem */
+ --font-size-header-xs: 0.875rem; /* 14px ÷ 16 = 0.875rem */
 
  /*  LETTER SPACINGS  */
 
- --letter-spacing-xs: -2%;
- --letter-spacing-s: -1%;
- --letter-spacing-m: 8%;
- --letter-spacing-l: 10%;
+ --letter-spacing-s: -1px;
+ --letter-spacing-l: 1px;
 
  /*  LINE HEIGHTS  */
 
@@ -144,6 +144,7 @@ h3,
  color: var(--black);
  font-weight: 900;
  letter-spacing: var(--letter-spacing-s);
+ line-height: var(--line-height-l);
 }
 h4,
 .h4 {
@@ -151,6 +152,7 @@ h4,
  color: var(--black);
  font-weight: bold;
  letter-spacing: var(--letter-spacing-xs);
+ line-height: var(--line-height-l);
 }
 
 /* TEXTS */
@@ -279,6 +281,7 @@ p a {
  background-size: 100% 200%;
  transition: 0.3s ease;
  background-position: bottom;
+ font-size: var(--font-size-menu);
  background-image: linear-gradient(var(--black) 50%, var(--primary-color) 50%);
  &:focus,
  &:hover {
@@ -320,10 +323,15 @@ p a {
  height: 48px;
  width: 50px;
  background-color: var(--grey);
+ transition: 0.3s ease;
  svg {
   width: 16px;
   height: 16px;
   fill: var(--white);
+ }
+ &:focus,
+ &:hover {
+  background-color: var(--black);
  }
 }
 
@@ -368,7 +376,7 @@ form.form_search {
  button {
   height: 48px;
   width: 50px;
-  background-color: var(--darkgrey);
+  background-color: var(--grey);
   svg {
    width: 16px;
    height: 16px;

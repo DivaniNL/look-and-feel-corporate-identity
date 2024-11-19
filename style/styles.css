@@ -1,0 +1,14 @@
+/* CSS */
+@import url("./redpers.css");
+
+/* Own Standard code */
+@import url("./general.css");
+/*  */
+
+@import url("./header.css");
+/* First section of post */
+@import url("./intro_article.css");
+/* Article container */
+@import url("./article_container.css");
+@import url("./popup.css");
+@import url("./footer.css");

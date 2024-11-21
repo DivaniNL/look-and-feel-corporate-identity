@@ -24,10 +24,10 @@
         font-size: 14px;
         margin-bottom: 15px;
     }
-    &#nieuwsbrief_popup{
+    &#popup_nieuwsbrief{
        
     }
-    &#search_popup{
+    &#popup_search{
         form{
             display: flex;
             border: 1px solid var(--black);

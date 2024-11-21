@@ -1,11 +1,11 @@
-body#redpersHome{
- section.section_intro{
+body#redpersHome {
+ section.section_intro {
   padding-bottom: 47px;
-  article.article_intro{
+  article.article_intro {
    border: 0;
    display: grid;
    position: relative;
-   .part_content{
+   .part_content {
     display: flex;
     background-image: url("../assets/studentensport.webp");
     height: 26.75rem;
@@ -17,30 +17,30 @@ body#redpersHome{
     padding: 1rem;
     background-color: var(--white);
 
-    h1.heading_article{
+    h1.heading_article {
      font-size: var(--font-size-header-article);
      color: var(--white);
      z-index: 2;
      position: relative;
-     @media (min-width: 860px){
+     @media (min-width: 860px) {
       font-size: var(--font-size-header-l);
       color: var(--black);
      }
-     @media (min-width: 1100px){
+     @media (min-width: 1100px) {
       max-width: 375px;
      }
     }
-    p.text_intro{
-     @media (min-width: 1100px){
+    p.text_intro {
+     @media (min-width: 1100px) {
       max-width: 430px;
      }
     }
-    p.text_meta{
+    p.text_meta {
      color: var(--darkgrey);
      /* align-self: end; */
      margin-top: auto;
     }
-    @media (min-width: 860px){
+    @media (min-width: 860px) {
      /* grid-template-rows: min-content min-content min-content; */
      display: flex;
      flex-direction: column;
@@ -53,46 +53,46 @@ body#redpersHome{
      background-position: initial;
      align-items: normal;
      border: 1px solid var(--black);
-    }     
+    }
    }
-   .shape{
+   .shape {
     position: absolute;
     z-index: -1;
     bottom: -57px;
     width: 100%;
-    >g>path{
+    > g > path {
      fill: var(--black);
     }
-    @media (min-width: 860px){
+    @media (min-width: 860px) {
      display: none;
     }
    }
-   &:after{
+   &:after {
     position: absolute;
     top: 0;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
-    @media (min-width: 860px){
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    @media (min-width: 860px) {
      display: none;
     }
    }
-   .label_date{
+   .label_date {
     top: 0;
     left: 0;
     bottom: unset;
     right: unset;
     padding: 0.5rem 1rem;
    }
-   @media (min-width: 860px){
+   @media (min-width: 860px) {
     grid-column: span 1;
    }
   }
-  figure{
-   @media(min-width: 860px){
+  figure {
+   @media (min-width: 860px) {
     grid-column: span 2;
-    img{
+    img {
      width: 100%;
      height: 100%;
      object-fit: cover;
@@ -100,32 +100,32 @@ body#redpersHome{
     }
    }
   }
-  @media (min-width: 860px){
+  @media (min-width: 860px) {
    margin-top: 3rem;
    padding-bottom: 0;
   }
-  @media(min-width: 1100px){
+  @media (min-width: 1100px) {
    display: grid;
-   grid-template-columns: repeat(3, calc((100% - 40px) / 3)); 
+   grid-template-columns: repeat(3, calc((100% - 40px) / 3));
    column-gap: 20px;
    margin-top: 7.5rem;
   }
  }
- section.section_articles_row{
+ section.section_articles_row {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
-  article{
+  article {
    border: 1px solid var(--black);
    position: relative;
    background-color: var(--white);
-   figure{
+   figure {
     /* height: 15.625rem; */
     width: 100%;
     aspect-ratio: 360 / 250;
     max-height: 400px;
-    img{
+    img {
      display: block;
      height: 100%;
      width: 100%;
@@ -134,25 +134,86 @@ body#redpersHome{
      max-height: 400px;
     }
    }
-   .content_article{
+   .content_article {
     padding: 1rem;
     border-top: 1px solid var(--black);
     display: flex;
     flex-direction: column;
     gap: 1.8125rem;
-    p.text_meta{
+    p.text_meta {
      color: var(--darkgrey);
      margin-top: auto;
     }
    }
   }
  }
- .seperator_rubriek{
+ aside.frame_donation {
+  border: 1px solid var(--primary-color-accent);
+  color: var(--primary-color);
+  background-color: var(--primary-color-lightest);
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+   "t t t t"
+   "b1 b2 b3 b4"
+   "b5 b5 b5 b5";
+   margin-bottom: 2.5rem;
+  padding: 1.6875rem;
+  p {
+   grid-area: t;
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   margin-bottom: 1.1875rem;
+  }
+
+  > a {
+   height: 2.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--primary-color-lighter);
+   color: var(--primary-color);
+   text-transform: uppercase;
+   text-decoration: none;
+   transition: 0.3s ease;
+   font-size: var(--font-size-menu);
+   &:after {
+    display: none;
+   }
+   &:hover,
+   &:focus {
+    background: var(--black);
+    color: var(--white);
+   }
+  }
+
+  .b1 {
+   grid-area: b1;
+  }
+
+  .b2 {
+   grid-area: b2;
+  }
+
+  .b3 {
+   grid-area: b3;
+  }
+
+  .b4 {
+   grid-area: b4;
+  }
+
+  .b5 {
+   grid-area: b5;
+  }
+ }
+ .seperator_rubriek {
   display: flex;
   position: relative;
   border-top: 5px solid var(--primary-color);
   margin: 0 0 1.25rem;
-  >h2{
+  > h2 {
    display: flex;
    align-items: center;
    line-height: 150%;
@@ -161,7 +222,7 @@ body#redpersHome{
    padding: 13px 11px;
    background: var(--primary-color);
   }
-  >a{
+  > a {
    display: flex;
    align-items: center;
    flex-wrap: wrap;
@@ -171,35 +232,36 @@ body#redpersHome{
    letter-spacing: 1px;
    padding-right: 4px;
    transition: 0.2s ease;
-   >svg{
+   > svg {
     width: 25px;
     height: 25px;
     margin-left: auto;
     transition: 0.2s ease;
    }
-   
-   &:hover, &:active, &:focus{
+
+   &:hover,
+   &:active,
+   &:focus {
     background-color: var(--black);
     color: var(--white);
-    >svg{
-     >path{
+    > svg {
+     > path {
       fill: var(--white);
      }
     }
    }
-
   }
-  .anchor{
+  .anchor {
    position: absolute;
    top: -85px;
    width: 100%;
    height: 1px;
   }
-  .anchor:target + h2 + a.text_menu{
+  .anchor:target + h2 + a.text_menu {
    background-color: var(--black);
    color: var(--white);
-   >svg{
-    >path{
+   > svg {
+    > path {
      fill: var(--white);
     }
    }

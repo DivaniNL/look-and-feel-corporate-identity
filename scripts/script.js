@@ -114,27 +114,6 @@ document.querySelectorAll('.openSearchPopupButton').forEach(button => {
     });
 });
 
-// Select the element with the specified classes and add a click event listener
-document.querySelector('.utility_btn.textsize').addEventListener("click", function() {
-    if (Textsizeison === 0) {
-        // Increase font size by 10% for direct children of #main_content
-        document.querySelectorAll('#main_content > *').forEach(function(el) {
-            const currentFontSize = parseInt(window.getComputedStyle(el).fontSize);
-            const increasedSize = (currentFontSize * 110) / 100; // Increase font size
-            el.style.fontSize = increasedSize + 'px'; // Set new font size
-        });
-        Textsizeison = 1; // Update state variable
-    } else {
-        // Decrease font size back to original (by dividing by 1.10)
-        document.querySelectorAll('#main_content > *').forEach(function(el) {
-            const currentFontSize = parseInt(window.getComputedStyle(el).fontSize);
-            const decreasedSize = (currentFontSize * 100) / 110; // Decrease font size
-            el.style.fontSize = decreasedSize + 'px'; // Set new font size
-            el.style.fontSize = '';
-        });
-        Textsizeison = 0; // Update state variable
-    }
-});
 
 // Close popup when Escape key is pressed
 document.addEventListener('keydown', function(e) {

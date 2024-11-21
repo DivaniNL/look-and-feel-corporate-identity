@@ -149,6 +149,7 @@ body#redpersHome{
  }
  .seperator_rubriek{
   display: flex;
+  position: relative;
   border-top: 5px solid var(--primary-color);
   margin: 0 0 1.25rem;
   >h2{
@@ -169,25 +170,38 @@ body#redpersHome{
    justify-content: space-between;
    letter-spacing: 1px;
    padding-right: 4px;
+   transition: 0.2s ease;
    >svg{
     width: 25px;
     height: 25px;
     margin-left: auto;
+    transition: 0.2s ease;
    }
-   .anchor{
-    position: absolute;
-    top: -85px;
-    width: 100%;
-    height: 1px;
-   }
+   
    &:hover, &:active, &:focus{
+    background-color: var(--black);
+    color: var(--white);
+    >svg{
+     >path{
+      fill: var(--white);
+     }
+    }
+   }
 
-   }
-   .anchor:target{
-    background-color: rebeccapurple;
-   }
-   .anchor:target + h2 + a.text_menu{
-    background-color: red !important;
+  }
+  .anchor{
+   position: absolute;
+   top: -85px;
+   width: 100%;
+   height: 1px;
+  }
+  .anchor:target + h2 + a.text_menu{
+   background-color: var(--black);
+   color: var(--white);
+   >svg{
+    >path{
+     fill: var(--white);
+    }
    }
   }
  }

@@ -50,7 +50,7 @@ const ScrollActions = () => {
 
     // Check if newsletter popup needs to be shown
     if (scrollValue > 50 && !hasShownNewsletterPopup) { // Check if popup has not been shown yet
-        showPopUp("nieuwsbrief_popup");
+        showPopUp("popup_nieuwsbrief");
         hasShownNewsletterPopup = true; // Set the flag to true
     }
 
@@ -103,14 +103,14 @@ document.querySelectorAll('.closePopUp').forEach(button => {
 // Allow reopening the newsletter popup on button click
 document.querySelectorAll('.openNewsletterPopupButton').forEach(button => {
     button.addEventListener('click', () => {
-        showPopUp("nieuwsbrief_popup"); // Open the popup
+        showPopUp("popup_nieuwsbrief"); // Open the popup
     });
 });
 
 // Allow reopening the search popup on button click
 document.querySelectorAll('.openSearchPopupButton').forEach(button => {
     button.addEventListener('click', () => {
-        showPopUp("search_popup"); // Open the popup
+        showPopUp("popup_search"); // Open the popup
     });
 });
 

@@ -1,4 +1,5 @@
 body#redpersHome {
+ --font-size-small: var(--font-size-header-xs) /* rename a duplicate of the var for better code understanding */
  section.section_intro {
   padding-bottom: 47px;
   article.article_intro {
@@ -141,7 +142,7 @@ body#redpersHome {
    padding: 1.6875rem;
    p {
     grid-area: t;
-    font-size: 0.875rem;
+    font-size: var(--font-size-small);
     line-height: 1.25rem;
     margin-bottom: 1.1875rem;
    }

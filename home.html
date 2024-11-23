@@ -31,13 +31,13 @@
   <input id="menu-toggle" class="hamburger" aria-label="Mobile-menu" role="checkbox" type="checkbox" tabindex="1" />
 
   <label for="menu-toggle">
-   <svg id="menu-closed" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+   <svg aria-label="Open mobiele menu" id="menu-closed" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
     <rect width="36" height="36" fill="white" />
     <path fill-rule="evenodd" clip-rule="evenodd"
      d="M9.75 10.5C9.75 10.0858 10.0858 9.75 10.5 9.75H25.5C25.9142 9.75 26.25 10.0858 26.25 10.5C26.25 10.9142 25.9142 11.25 25.5 11.25H10.5C10.0858 11.25 9.75 10.9142 9.75 10.5ZM9.75 18C9.75 17.5858 10.0858 17.25 10.5 17.25H25.5C25.9142 17.25 26.25 17.5858 26.25 18C26.25 18.4142 25.9142 18.75 25.5 18.75H10.5C10.0858 18.75 9.75 18.4142 9.75 18ZM9.75 25.5C9.75 25.0858 10.0858 24.75 10.5 24.75H25.5C25.9142 24.75 26.25 25.0858 26.25 25.5C26.25 25.9142 25.9142 26.25 25.5 26.25H10.5C10.0858 26.25 9.75 25.9142 9.75 25.5Z"
      fill="black" />
    </svg>
-   <svg id="menu-opened" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+   <svg aria-label="Sluit Mobiele menu" id="menu-opened" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
     <path fill-rule="evenodd" clip-rule="evenodd"
      d="M9.96967 26.0303C9.67678 25.7374 9.67678 25.2626 9.96967 24.9697L24.9697 9.96967C25.2626 9.67678 25.7374 9.67678 26.0303 9.96967C26.3232 10.2626 26.3232 10.7374 26.0303 11.0303L11.0303 26.0303C10.7374 26.3232 10.2626 26.3232 9.96967 26.0303Z"
      fill="black"></path>
@@ -50,7 +50,7 @@
    <img src="./assets/RedPers_Logo.webp" alt="Logo van Red Pers">
   </a>
   <button class="search-icon openSearchPopupButton" tabindex="4" aria-label="Search">Zoeken
-   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+   <svg aria-label="Icoon van vergrootglas" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
     <path
      d="M29.7576 29.7C29.4645 29.9931 28.9892 29.9931 28.6961 29.7L19.8345 20.8385C19.0845 21.4769 18.222 21.9712 17.247 22.3212C16.272 22.6712 15.2922 22.8462 14.3076 22.8462C11.9051 22.8462 9.87178 22.0146 8.20765 20.3513C6.5435 18.6881 5.71143 16.6559 5.71143 14.2547C5.71143 11.8535 6.54304 9.81971 8.20626 8.15336C9.86949 6.48701 11.9017 5.65384 14.3029 5.65384C16.7041 5.65384 18.7379 6.4859 20.4042 8.15003C22.0706 9.81415 22.9037 11.8475 22.9037 14.25C22.9037 15.2923 22.7191 16.301 22.3499 17.276C21.9807 18.251 21.4961 19.0846 20.8961 19.7769L29.7576 28.6385C30.0508 28.9316 30.0508 29.4069 29.7576 29.7ZM14.3076 21.3462C16.298 21.3462 17.9783 20.6611 19.3484 19.2909C20.7186 17.9207 21.4037 16.2404 21.4037 14.25C21.4037 12.2596 20.7186 10.5793 19.3484 9.20914C17.9783 7.83894 16.298 7.15384 14.3076 7.15384C12.3172 7.15384 10.6369 7.83894 9.26673 9.20914C7.89655 10.5793 7.21146 12.2596 7.21146 14.25C7.21146 16.2404 7.89655 17.9207 9.26673 19.2909C10.6369 20.6611 12.3172 21.3462 14.3076 21.3462Z"
      fill="black" />
@@ -88,7 +88,7 @@
  </header>
  <main id="content">
   <div class="grid_giver_desktop ">
-   <svg class="shape_green mobile_hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843"
+   <svg aria-hidden="true" class="shape_green mobile_hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843"
     preserveAspectRatio="none" fill="none">
     <g class="filter-effect">
      <!-- Half ellipse centered at the bottom -->
@@ -194,9 +194,9 @@
       <div class="content_article">
        <h2 class="heading_article">Decennia na verschijning blijft de Halloween cultklassieker Rocky Horror belangrijk
         voor de queer community: ‘Rocky Horror is de plek waar ik anders kan zijn dan overdag.’</h2>
-       <p class="text_meta">
-        <strong>Siem Rothengatter</strong> - 4 min
-       </p>
+       <div class="text_meta">
+        <strong>Siem Rothengatter</strong><div class="text_reading_time"> - 4 min</div>
+       </div>
        <div class="label_date text_meta">15 nov</div>
       </div>
      </article>
@@ -206,9 +206,9 @@
       <div class="content_article">
        <h2 class="heading_article">Een genocide in slow motion: de verwoestende gevolgen van ruim zestig jaar embargo
         tegen Cuba</h2>
-       <p class="text_meta">
-        <strong>YAEL KOSTER</strong> - 4 min
-       </p>
+       <div class="text_meta">
+        <strong>YAEL KOSTER</strong><div class="text_reading_time"> - 4 min</div>
+       </div>
        <div class="label_date text_meta">11 nov</div>
       </div>
      </article>
@@ -219,37 +219,43 @@
        <h2 class="heading_article">
         Stichting Red Pers zoekt nieuwe bestuursleden!
        </h2>
-       <p class="text_meta">
-        <strong>HOOFDREDACTIE RED PERS</strong> - 4 min
-       </p>
+       <div class="text_meta">
+        <strong>HOOFDREDACTIE RED PERS</strong><div class="text_reading_time"> - 4 min</div>
+       </div>
        <div class="label_date text_meta">9 nov</div>
       </div>
      </article>
 
     </section>
-    <aside class="frame_donation">
-     <p>Je las dit artikel gratis, maar dat betekent niet dat het Red Pers niets heeft gekost. Wij bieden
-      jonge, aspirerende journalisten een podium én begeleiding. Dat kunnen we nog beter met jouw
-      steun. Die steun komt met twee voor de prijs van één, want onze sponsor matcht jouw donatie.
-      Geef jij ons vijf euro? Dan ontvangen wij een tientje.
-     </p>
-
-     <a target="_blank" href="https://bunq.me/redpersnl/5" class="b1">€5</a>
-
-     <a target="_blank" href="https://bunq.me/redpersnl/10" class="b2">€10</a>
-
-     <a target="_blank" href="https://bunq.me/redpersnl/20" class="b3">€20</a>
-
-     <a target="_blank" href="https://bunq.me/redpersnl/50" class="b4">€50</a>
-
-     <a target="_blank" href="https://bunq.me/redpersnl/" class="b5">Anders</a>
-    </aside>
+    <section class="section_donations">
+      <h3 class="text_primary">
+        Steun Red Pers
+      </h3>
+      <aside class="frame_donation">
+        <p>Je las dit artikel gratis, maar dat betekent niet dat het Red Pers niets heeft gekost. Wij bieden
+         jonge, aspirerende journalisten een podium én begeleiding. Dat kunnen we nog beter met jouw
+         steun. Die steun komt met twee voor de prijs van één, want onze sponsor matcht jouw donatie.
+         Geef jij ons vijf euro? Dan ontvangen wij een tientje.
+        </p>
+   
+        <a target="_blank" href="https://bunq.me/redpersnl/5" class="b1" aria-label="Doneer 5 Euro aan Red Pers">€5</a>
+   
+        <a target="_blank" href="https://bunq.me/redpersnl/10" class="b2" aria-label="Doneer 10 Euro aan Red Pers">€10</a>
+   
+        <a target="_blank" href="https://bunq.me/redpersnl/20" class="b3" aria-label="Doneer 20 Euro aan Red Pers">€20</a>
+   
+        <a target="_blank" href="https://bunq.me/redpersnl/50" class="b4" aria-label="Doneer 50 Euro aan Red Pers">€50</a>
+   
+        <a target="_blank" href="https://bunq.me/redpersnl/" class="b5" aria-label="Doneer een ander bedrag aan Red Pers">Anders</a>
+       </aside>
+    </section>
+    
     <div class="seperator_rubriek">
      <div class="anchor" id="binnenland"></div>
      <h2>Binnenland</h2>
      <a href="#" class="text_menu">
       Meer Binnenland
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -266,25 +272,25 @@
        <h2 class="heading_article">
         Sportfaciliteiten voor studenten zijn essentieel, maar de toekomst is onzeker
        </h2>
-       <p class="text_meta">
-        <strong>ESTHER BROM</strong> - 3 MIN
-       </p>
+       <div class="text_meta">
+        <strong>ESTHER BROM</strong><div class="text_reading_time"> - 3 MIN</div>
+       </div>
        <div class="label_date text_meta">15 nov</div>
       </div>
      </article>
 
      <article>
       <figure>
-       <figure><img src="./assets/party.webp" alt="Queer Party"></figure>
+       <img src="./assets/party.webp" alt="Queer Party">
       </figure>
       <div class="content_article">
        <h2 class="heading_article">
         Decennia na verschijning blijft de Halloween cultklassieker Rocky Horror belangrijk voor de queer community:
         'Rocky Horror is de plek waar ik anders kan zijn dan overdag.'
        </h2>
-       <p class="text_meta">
-        <strong>SI ROTHENGATTES</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>SI ROTHENGATTES</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">15 nov</div>
       </div>
      </article>
@@ -297,9 +303,9 @@
        <h2 class="heading_article">
         Zorgen om het einde van de bed-bad-broodregeling: 'Het gaat niet voor meer terugkeer zorgen'
        </h2>
-       <p class="text_meta">
-        <strong>FLOOR ADRIAANSE</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>FLOOR ADRIAANSE</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">30 okt</div>
       </div>
      </article>
@@ -310,7 +316,7 @@
      <h2>Buitenland</h2>
      <a href="#" class="text_menu">
       Meer Buitenland
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -327,9 +333,9 @@
        <h2 class="heading_article">
         Een genocide in slow motion: de verwoestende gevolgen van ruim zestig jaar embargo tegen Cuba
        </h2>
-       <p class="text_meta">
-        <strong>YAEL KOSTER</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>YAEL KOSTER</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">11 nov</div>
       </div>
      </article>
@@ -342,9 +348,9 @@
        <h2 class="heading_article">
         Losse dassen bij Republikeinen in New York en verstikking in Chicago na verkiezingen
        </h2>
-       <p class="text_meta">
-        <strong>BRAM KLEIJNE & ANNA VAN POUCKE</strong> - 5 MIN
-       </p>
+       <div class="text_meta">
+        <strong>BRAM KLEIJNE & ANNA VAN POUCKE</strong><div class="text_reading_time"> - 5 MIN</div>
+       </div>
        <div class="label_date text_meta">7 nov</div>
       </div>
      </article>
@@ -358,9 +364,9 @@
        <h2 class="heading_article">
         Strenge identiteitsplicht bij de Amerikaanse verkiezingen barrière voor kiezers
        </h2>
-       <p class="text_meta">
-        <strong>BRAM KLEIJNE</strong> - 5 MIN
-       </p>
+       <div class="text_meta">
+        <strong>BRAM KLEIJNE</strong><div class="text_reading_time"> - 5 MIN</div>
+       </div>
        <div class="label_date text_meta">4 nov</div>
       </div>
      </article>
@@ -371,7 +377,7 @@
      <h2>Columns</h2>
      <a href="#" class="text_menu">
       Meer Columns
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -388,9 +394,9 @@
        <h2 class="heading_article">
         Migratie: óók een stokpaardje
        </h2>
-       <p class="text_meta">
-        <strong>FLOOR ADRIAANSE</strong> - 3 MIN
-       </p>
+       <div class="text_meta">
+        <strong>FLOOR ADRIAANSE</strong><div class="text_reading_time"> - 3 MIN</div>
+       </div>
        <div class="label_date text_meta">6 dec</div>
       </div>
      </article>
@@ -403,9 +409,9 @@
        <h2 class="heading_article">
         Na twaalf Lessen van een vreemde maakt Iris ten Have de balans op
        </h2>
-       <p class="text_meta">
-        <strong>IRIS TEN HAVE</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>IRIS TEN HAVE</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">17 jul</div>
       </div>
      </article>
@@ -418,9 +424,9 @@
        <h2 class="heading_article">
         'De brilkeuze van Mark Rutte is een perfect symbool voor zijn regeerperiode'
        </h2>
-       <p class="text_meta">
-        <strong>MERVE ÖZDEMIR</strong> - 2 MIN
-       </p>
+       <div class="text_meta">
+        <strong>MERVE ÖZDEMIR</strong><div class="text_reading_time"> - 2 MIN</div>
+       </div>
        <div class="label_date text_meta">14 jul</div>
       </div>
      </article>
@@ -431,7 +437,7 @@
      <h2>Economie</h2>
      <a href="#" class="text_menu">
       Meer Economie
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -449,9 +455,9 @@
        <h2 class="heading_article">
         De onzichtbare littekens van jeugdwerkloosheid: waarom jongeren stranden in de bijstand
        </h2>
-       <p class="text_meta">
-        <strong>JEROEN GROOT</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>JEROEN GROOT</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">6 jul</div>
       </div>
      </article>
@@ -464,9 +470,9 @@
        <h2 class="heading_article">
         Van wanhoop naar woonhoop: 'Wij hebben niet het geld om te kopen, toch zijn we ons eigen huis aan het bouwen'
        </h2>
-       <p class="text_meta">
-        <strong>ALYSHA POLET</strong> - 5 MIN
-       </p>
+       <div class="text_meta">
+        <strong>ALYSHA POLET</strong><div class="text_reading_time"> - 5 MIN</div>
+       </div>
        <div class="label_date text_meta">12 nov</div>
       </div>
      </article>
@@ -480,9 +486,9 @@
        <h2 class="heading_article">
         Inflatie leert studenten harde les in budgetteren
        </h2>
-       <p class="text_meta">
-        <strong>SAM VAN DEN BOOGAARD</strong> - 3 MIN
-       </p>
+       <div class="text_meta">
+        <strong>SAM VAN DEN BOOGAARD</strong><div class="text_reading_time"> - 3 MIN</div>
+       </div>
        <div class="label_date text_meta">1 jun</div>
       </div>
      </article>
@@ -493,7 +499,7 @@
      <h2>Kunst & Media</h2>
      <a href="#" class="text_menu">
       Meer Kunst & Media
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -510,9 +516,9 @@
        <h2 class="heading_article">
         Rouwen heeft een gebrek aan ruimte en een teveel aan ongemak
        </h2>
-       <p class="text_meta">
-        <strong>EVA BAART</strong> - 5 MIN
-       </p>
+       <div class="text_meta">
+        <strong>EVA BAART</strong><div class="text_reading_time"> - 5 MIN</div>
+       </div>
        <div class="label_date text_meta">8 nov</div>
       </div>
      </article>
@@ -525,9 +531,9 @@
        <h2 class="heading_article">
         Ruiken wat je ziet, in de geurwereld van Spirited Away
        </h2>
-       <p class="text_meta">
-        <strong>YOUSSEF EL KHATTABI</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>YOUSSEF EL KHATTABI</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">21 okt</div>
       </div>
      </article>
@@ -540,9 +546,9 @@
        <h2 class="heading_article">
         Met een petitie de bureaucratie te lijf: hoe een kunstinstelling vecht voor subsidie
        </h2>
-       <p class="text_meta">
-        <strong>KAAT VAN SPAENDONCK</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>KAAT VAN SPAENDONCK</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">20 okt</div>
       </div>
      </article>
@@ -553,7 +559,7 @@
      <h2>Podcasts</h2>
      <a href="#" class="text_menu">
       Meer Podcasts
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -570,9 +576,9 @@
        <h2 class="heading_article">
         Tim 'S Jongers: 'Iedereen die in dit land aan de knoppen draait, is hoogopgeleid, gezond en tevreden'
        </h2>
-       <p class="text_meta">
-        <strong>HOOFDREDACTIE RED PERS</strong> - &lt;1 MIN
-       </p>
+       <div class="text_meta">
+        <strong>HOOFDREDACTIE RED PERS</strong><div class="text_reading_time"> - &lt;1 MIN</div>
+       </div>
        <div class="label_date text_meta">24 nov</div>
       </div>
      </article>
@@ -585,9 +591,9 @@
        <h2 class="heading_article">
         Sinan Çankaya: 'Hoop is de nipte overwinning op de wanhoop'
        </h2>
-       <p class="text_meta">
-        <strong>HOOFDREDACTIE RED PERS</strong> - &lt;1 MIN
-       </p>
+       <div class="text_meta">
+        <strong>HOOFDREDACTIE RED PERS</strong><div class="text_reading_time"> - &lt;1 MIN</div>
+       </div>
        <div class="label_date text_meta">10 nov</div>
       </div>
      </article>
@@ -600,9 +606,9 @@
        <h2 class="heading_article">
         Raounak Khaddari: 'In Friends lijkt het alsof heel veel vrienden het einde is, alsof dat je gelukkig maakt'
        </h2>
-       <p class="text_meta">
-        <strong>HOOFDREDACTIE RED PERS</strong> - &lt;1 MIN
-       </p>
+       <div class="text_meta">
+        <strong>HOOFDREDACTIE RED PERS</strong><div class="text_reading_time"> - &lt;1 MIN</div>
+       </div>
        <div class="label_date text_meta">27 okt</div>
       </div>
      </article>
@@ -613,7 +619,7 @@
      <h2>Politiek</h2>
      <a href="#" class="text_menu">
       Meer Politiek
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -630,9 +636,9 @@
        <h2 class="heading_article">
         Losse dassen bij Republikeinen in New York en verstikking in Chicago na verkiezingen
        </h2>
-       <p class="text_meta">
-        <strong>BRAM KLEIJNE & ANNA VAN POUCKE</strong> - 5 MIN
-       </p>
+       <div class="text_meta">
+        <strong>BRAM KLEIJNE & ANNA VAN POUCKE</strong><div class="text_reading_time"> - 5 MIN</div>
+       </div>
        <div class="label_date text_meta">7 nov</div>
       </div>
      </article>
@@ -646,9 +652,9 @@
        <h2 class="heading_article">
         Opgesloten en buitengesloten: hoe Amerikaanse (ex-)gevangenen het stemrecht wordt ontnomen
        </h2>
-       <p class="text_meta">
-        <strong>BRAM KLEIJNE</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>BRAM KLEIJNE</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">31 okt</div>
       </div>
      </article>
@@ -661,9 +667,9 @@
        <h2 class="heading_article">
         Een nieuwe overheid, dankzij New Public Governance
        </h2>
-       <p class="text_meta">
-        <strong>EMMA TIMMERMANS</strong> - 4 MIN
-       </p>
+       <div class="text_meta">
+        <strong>EMMA TIMMERMANS</strong><div class="text_reading_time"> - 4 MIN</div>
+       </div>
        <div class="label_date text_meta">25 okt</div>
       </div>
      </article>
@@ -674,7 +680,7 @@
      <h2>Wetenschap</h2>
      <a href="#" class="text_menu">
       Meer Wetenschap
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" height="512" viewBox="0 0 24 24" width="512">
        <path
         d="m12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 18c-4.549 0-8.25-3.701-8.25-8.25s3.701-8.25 8.25-8.25 8.25 3.701 8.25 8.25-3.701 8.25-8.25 8.25zm2.53-8.781c.293.293.293.768 0 1.061l-3 3c-.146.146-.338.22-.53.22s-.384-.073-.53-.22c-.293-.293-.293-.768 0-1.061l2.47-2.47-2.47-2.46995c-.293-.293-.293-.76803 0-1.06103s.768-.293 1.061 0z"
         fill="rgb(0,0,0)"></path>
@@ -691,9 +697,9 @@
        <h2 class="heading_article">
         Jonge vrouwen lezen liever Engelse boeken, Angela Kroes legt uit waarom
        </h2>
-       <p class="text_meta">
-        <strong>ANIKÓ DE GEEST</strong> - 3 MIN
-       </p>
+       <div class="text_meta">
+        <strong>ANIKÓ DE GEEST</strong><div class="text_reading_time"> - 3 MIN</div>
+       </div>
        <div class="label_date text_meta">27 aug</div>
       </div>
      </article>
@@ -706,9 +712,9 @@
        <h2 class="heading_article">
         De mythe van modelminderheid
        </h2>
-       <p class="text_meta">
-        <strong>SASHA VERHEIJ</strong> - 3 MIN
-       </p>
+       <div class="text_meta">
+        <strong>SASHA VERHEIJ</strong><div class="text_reading_time"> - 3 MIN</div>
+       </div>
        <div class="label_date text_meta">24 apr</div>
       </div>
      </article>
@@ -721,9 +727,9 @@
        <h2 class="heading_article">
         Professor Ellers blikt terug op ophef klimaatartikel: 'Het activisme is mij zijdelings overkomen'
        </h2>
-       <p class="text_meta">
-        <strong>JILL DEN BOER</strong> - 5 MIN
-       </p>
+       <div class="text_meta">
+        <strong>JILL DEN BOER</strong><div class="text_reading_time"> - 5 MIN</div>
+       </div>
        <div class="label_date text_meta">19 apr</div>
       </div>
      </article>
@@ -765,7 +771,7 @@
 
  <footer>
   <h2 class="hidden_title">Inhoud van footer</h2>
-  <svg class="shape_grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843" preserveAspectRatio="none"
+  <svg aria-hidden="true" class="shape_grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843" preserveAspectRatio="none"
    fill="none">
    <path d="M 0 843 H 1000 V 60 A 500 40 0 0 0 0 40 Z" fill="#F7F7F5"></path>
 

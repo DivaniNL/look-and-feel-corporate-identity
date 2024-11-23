@@ -286,20 +286,6 @@ body#redpersHome {
     }
    }
   }
-  .anchor {
-   position: absolute;
-   top: -85px;
-   width: 100%;
-   height: 1px;
-  }
-  .anchor:target + h2 + a.text_menu {
-   background-color: var(--black);
-   color: var(--white);
-   > svg {
-    > path {
-     fill: var(--white);
-    }
-   }
-  }
+  
  }
 }

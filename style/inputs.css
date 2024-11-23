@@ -1,0 +1,10 @@
+input[type="number"]::-webkit-inner-spin-button{
+margin: 0;
+}
+form{
+    display: grid;
+    gap: 10px;
+}
+input:invalid{
+    background-color: hotpink;
+}

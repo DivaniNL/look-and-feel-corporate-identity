@@ -1,5 +1,7 @@
-body#redpersHome {
+body{
  --font-size-small: var(--font-size-header-xs) /* rename a duplicate of the var for better code understanding */
+}
+body#redpersHome {
  section.section_intro {
   padding-bottom: 47px;
 

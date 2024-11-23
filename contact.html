@@ -8,7 +8,9 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Red Pers</title>
  <meta name="description" content="Welkom bij Red Pers">
- <link rel="stylesheet" href="https://divaninl.github.io/redpers-styleguide/redpers.css">
+ <!-- Red Pers Algemene Stylesheet -->
+ <link rel="stylesheet" href="https://divaninl.github.io/redpers-styleguide/redpers.css"> 
+ <!--  -->
  <link rel="stylesheet" href="style/styles.css">
  <link rel="stylesheet" href="style/contact.css">
  <script src="./scripts/script.js" defer></script>
@@ -111,41 +113,57 @@
      </p>
 
     </section>
+
     <section class="section_form">
+
      <form method="POST" id="Submit" action="success.html">
+
       <fieldset>
+
        <legend class="hidden">Contactgegevens</legend>
 
        <label>
         Naam:
         <input required type="text" id="name" name="name" placeholder="Vul hier uw naam in">
+
         <p id="nameError" class="message_error"></p>
+
        </label>
 
        <label>
         Email-adres:
         <input required type="email" id="email" name="email" placeholder="Vul hier uw email-adres in">
+
         <p id="emailError" class="message_error"></p>
+
        </label>
 
        <label>
         Onderwerp:
         <input required type="text" id="subject" name="subject" placeholder="Vul hier het onderwerp in">
+
         <p id="subjectError" class="message_error"></p>
+
        </label>
 
        <label>
         Bericht:
         <textarea id="message" name="message" placeholder="Vul hier uw bericht in"></textarea>
+
         <p id="messageError" class="message_error"></p>
+
        </label>
 
        <input type="submit" value="Verzenden">
+
       </fieldset>
+
      </form>
+
     </section>
 
    </div>
+
   </div>
 
   <div class="popup" id="popup_search" data-popup="popup_search">
@@ -162,6 +180,7 @@
    </form>
    <button class="closePopUp"></button>
   </div>
+
   <div class="popup" id="popup_nieuwsbrief" data-popup="popup_nieuwsbrief">
    <h2>Nieuwsbrief</h2>
    <p>Elke drie weken houden we je op de hoogte van wat we schreven en wat we lazen in de Red Pers-nieuwsbrief.
@@ -177,12 +196,16 @@
    </a>
    <button class="closePopUp"></button>
   </div>
+
  </main>
 
  <footer>
+
   <h2 class="hidden_title">Inhoud van footer</h2>
+
   <svg aria-hidden="true" class="shape_grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843"
    preserveAspectRatio="none" fill="none">
+
    <path d="M 0 843 H 1000 V 60 A 500 40 0 0 0 0 40 Z" fill="#F7F7F5"></path>
 
    <defs>
@@ -207,7 +230,9 @@
     </filter>
    </defs>
   </svg>
-  <h3 class="hidden_title">Footermenu</h2>
+
+  <h3 class="hidden_title">Footermenu</h3>
+
    <div class="grid_receiver">
 
     <figure>
@@ -265,14 +290,19 @@
     <p class="copy">© 2024 Stichting Red Pers – Alle rechten voorbehouden</p>
 
     <nav class="legal_nav">
+
      <ul>
       <li><a href="">Privacystatement</a></li>
       <li><a href="">Cookiebeleid</a></li>
       <li><a href="">Copyright</a></li>
      </ul>
+
     </nav>
+
    </div>
+
  </footer>
+ 
 </body>
 
 </html>

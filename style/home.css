@@ -2,13 +2,15 @@ body#redpersHome {
  --font-size-small: var(--font-size-header-xs) /* rename a duplicate of the var for better code understanding */
  section.section_intro {
   padding-bottom: 47px;
+
   article.article_intro {
    border: 0;
    display: grid;
    position: relative;
+
    .part_content {
     display: flex;
-    background-image: url("../assets/studentensport.webp");
+    background-image: url("../assets/studentensport.webp"); /* made this a background to prevent duplicate html */
     height: 26.75rem;
     padding-right: 0.5rem;
     width: 100%;
@@ -18,6 +20,7 @@ body#redpersHome {
     padding: 1rem;
     background-color: var(--white);
     gap: 1.8125rem;
+
     h1.heading_article {
      font-size: var(--font-size-header-article);
      color: var(--white);
@@ -31,16 +34,19 @@ body#redpersHome {
       max-width: 375px;
      }
     }
+
     p.text_intro {
      @media (min-width: 1100px) {
       max-width: 430px;
      }
     }
+
     p.text_meta {
      color: var(--darkgrey);
      /* align-self: end; */
      margin-top: auto;
     }
+
     @media (min-width: 860px) {
      /* grid-template-rows: min-content min-content min-content; */
      display: flex;
@@ -55,6 +61,7 @@ body#redpersHome {
      align-items: normal;
      border: 1px solid var(--black);
     }
+
    }
    .shape {
     position: absolute;
@@ -64,10 +71,12 @@ body#redpersHome {
     > g > path {
      fill: var(--black);
     }
+
     @media (min-width: 860px) {
      display: none;
     }
    }
+
    &:after {
     position: absolute;
     top: 0;
@@ -75,10 +84,12 @@ body#redpersHome {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    
     @media (min-width: 860px) {
      display: none;
     }
    }
+
    .label_date {
     top: 0;
     left: 0;
@@ -86,10 +97,12 @@ body#redpersHome {
     right: unset;
     padding: 0.5rem 1rem;
    }
+
    @media (min-width: 860px) {
     grid-column: span 1;
    }
   }
+
   figure {
    @media (min-width: 860px) {
     grid-column: span 2;
@@ -101,10 +114,12 @@ body#redpersHome {
     }
    }
   }
+
   @media (min-width: 860px) {
    margin-top: 3rem;
    padding-bottom: 0;
   }
+
   @media (min-width: 1100px) {
    display: grid;
    grid-template-columns: repeat(3, calc((100% - 40px) / 3));
@@ -112,6 +127,7 @@ body#redpersHome {
    margin-top: 7.5rem;
   }
  }
+
  section.section_articles_row {
   display: flex;
   flex-direction: column;
@@ -122,6 +138,7 @@ body#redpersHome {
    flex-direction: row;
   }
  }
+
  section.section_donations{
   h3.text_primary{
    margin-bottom: 10px;
@@ -134,7 +151,7 @@ body#redpersHome {
    display: grid;
    gap: 4px;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-areas:
+   grid-template-areas: /* t = text, b1 t/m b4 are the first 4 buttons on the first button row, b5 is the large button */
     "t t t t"
     "b1 b2 b3 b4"
     "b5 b5 b5 b5";

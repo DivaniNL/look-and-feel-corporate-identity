@@ -21,21 +21,10 @@ body#redpersContact {
   display: grid;
 
   form{
-   max-width: 818px;
 
    fieldset {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--primary-color-accent);
-    color: var(--primary-color);
-    background-color: var(--primary-color-lightest);
-    margin: 2.5rem 0;
-    padding: 1.6875rem;
 
     label{
-     display: grid;
-     margin-bottom: 2.5rem;
-     position: relative;
 
      .message_error{
       display: none;
@@ -54,13 +43,6 @@ body#redpersContact {
       }
      }
      
-     textarea{
-      height: 7.5rem;
-     }
-     
-     @media (min-width: 860px){
-      margin-bottom: 3.75rem;
-     }
     }
 
     input:invalid,

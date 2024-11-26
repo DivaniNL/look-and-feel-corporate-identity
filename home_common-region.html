@@ -13,6 +13,7 @@
  <link rel="stylesheet" href="style/home.css">
  <link rel="stylesheet" href="style/home_common-region.css">
  <script src="./scripts/script.js" defer></script>
+ <script src="./scripts/formattedDate.js" defer></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link
@@ -21,6 +22,27 @@
 </head>
 
 <body id="redpersHome">
+  <noscript>
+    <style type="text/css">
+
+      .tagline{display: none !important;}
+      header + main{margin-top: 0 !important;}
+      .openSearchPopupButton{display: none !important;}
+
+      @media (min-width: 860px) {
+
+        body header a.logo {
+          position: absolute;
+          top: calc(1.5rem + 37px);
+          max-height: 36px;
+          left: 50%;
+          translate: -50% 0;
+            
+        }
+      }
+
+    </style>
+  </noscript>
  <a class="skip-to-content-link" href="#content">
   Skip to content
  </a>
@@ -60,7 +82,7 @@
    </svg>
   </label>
 
-  <a href="./home.html" class="logo" tabindex="2">
+  <a href="./index.html" class="logo" tabindex="2">
    <img src="./assets/RedPers_Logo.webp" alt="Logo van Red Pers">
   </a>
 

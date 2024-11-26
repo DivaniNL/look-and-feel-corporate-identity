@@ -10,7 +10,7 @@
  <meta name="description" content="Welkom bij Red Pers">
  <link rel="stylesheet" href="https://divaninl.github.io/redpers-styleguide/redpers.css">
  <link rel="stylesheet" href="./style/styles.css">
- <script src="./scripts/script.js" defer></script>
+ <script src="./scripts/formattedDate.js" defer></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link
@@ -19,6 +19,27 @@
 </head>
 
 <body>
+  <noscript>
+    <style type="text/css">
+
+      .tagline{display: none !important;}
+      header + main{margin-top: 0 !important;}
+      .openSearchPopupButton{display: none !important;}
+
+      @media (min-width: 860px) {
+
+        body header a.logo {
+          position: absolute;
+          top: calc(1.5rem + 37px);
+          max-height: 36px;
+          left: 50%;
+          translate: -50% 0;
+            
+        }
+      }
+
+    </style>
+  </noscript>
  <a class="skip-to-content-link" href="#content">
   Skip to content
  </a>
@@ -47,7 +68,7 @@
      fill="black"></path>
    </svg>
   </label>
-  <a href="./home.html" class="logo" tabindex="2">
+  <a href="./index.html" class="logo" tabindex="2">
    <img src="./assets/RedPers_Logo.webp" alt="Logo van Red Pers">
   </a>
   <button class="search-icon openSearchPopupButton" tabindex="4" aria-label="Search">Zoeken
@@ -90,17 +111,22 @@
  </header>
  <main id="content">
   <div id="container">
-   <div class="grid_receiver">
-    <div class="intro_page">
-     <h1 class="heading_article">Bekijk de pagina's</h1>
-     <a href="home.html" class="button_subscribe">Homepagina</a>
-     <a href="contact.html" class="button_subscribe">Contact</a>
-    </div>
+   <div class="grid_giver">
+    <div class="grid_receiver">
+      <div class="intro_page">
+      <h1 class="heading_article">Bekijk de pagina's</h1>
+      <a href="home.html" class="button_subscribe">Homepagina</a>
+      <a href="contact.html" class="button_subscribe">Contact</a>
+      <a href="home_similarity.html" class="button_subscribe">Homepagina met Gestalt Principe: Similarity</a>
+      <a href="home_proximity.html" class="button_subscribe">Homepagina met Gestalt Principe: Proximity</a>
+      <a href="home_common-region.html" class="button_subscribe">Homepagina met Gestalt Principe: Common Region</a>
+      </div>
 
+    </div>
    </div>
   </div>
 
-  <div class="popup" id="search_popup" data-popup="search_popup">
+  <div class="popup" id="popup_search" data-popup="popup_search">
    <h2>Zoeken</h2>
    <form class="form_search" action="/search" method="GET">
     <input type="text" name="q" placeholder="Search...">
@@ -114,7 +140,7 @@
    </form>
    <button class="closePopUp"></button>
   </div>
-  <div class="popup" id="nieuwsbrief_popup" data-popup="nieuwsbrief_popup">
+  <div class="popup" id="popup_nieuwsbrief" data-popup="popup_nieuwsbrief">
    <h2>Nieuwsbrief</h2>
    <p>Elke drie weken houden we je op de hoogte van wat we schreven en wat we lazen in de Red Pers-nieuwsbrief.</p>
    <a class="button_subscribe" href="https://redpers.substack.com/">

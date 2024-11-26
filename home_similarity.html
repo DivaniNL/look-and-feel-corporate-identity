@@ -11,6 +11,7 @@
  <link rel="stylesheet" href="https://divaninl.github.io/redpers-styleguide/redpers.css">
  <link rel="stylesheet" href="style/styles.css">
  <link rel="stylesheet" href="style/home.css">
+ <link rel="stylesheet" href="style/home_similarity.css">
  <script src="./scripts/script.js" defer></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,14 +88,14 @@
    </ul>
    <ul class="primary-navigation">
     <li><a href="#">Voorpagina</a></li>
-    <li><a href="#binnenland">Binnenland</a></li>
-    <li><a href="#buitenland">Buitenland</a></li>
-    <li><a href="#columns">Columns</a></li>
-    <li><a href="#economie">Economie</a></li>
-    <li><a href="#kunst-media">Kunst & Media</a></li>
-    <li><a href="#podcasts">Podcasts</a></li>
-    <li><a href="#politiek">Politiek</a></li>
-    <li><a href="#wetenschap">Wetenschap</a></li>
+    <li rubriek="binnenland"><a href="#binnenland">Binnenland</a></li>
+    <li rubriek="buitenland"><a href="#buitenland">Buitenland</a></li>
+    <li rubriek="columns"><a href="#columns">Columns</a></li>
+    <li rubriek="economie"><a href="#economie">Economie</a></li>
+    <li rubriek="kunst-media"><a href="#kunst-media">Kunst & Media</a></li>
+    <li rubriek="podcasts"><a href="#podcasts">Podcasts</a></li>
+    <li rubriek="politiek"><a href="#politiek">Politiek</a></li>
+    <li rubriek="wetenschap"><a href="#wetenschap">Wetenschap</a></li>
    </ul>
   </nav>
 
@@ -319,7 +320,7 @@
 
     <!-- BINNENLAND -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="binnenland">
 
      <div class="anchor" id="binnenland"></div>
 
@@ -339,7 +340,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="binnenland">
 
      <article>
 
@@ -421,7 +422,7 @@
 
     <!-- BUITENLAND -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="buitenland">
 
      <div class="anchor" id="buitenland"></div>
 
@@ -441,7 +442,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="buitenland">
 
      <article>
 
@@ -523,7 +524,7 @@
 
     <!-- COLUMNS -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="columns">
 
      <div class="anchor" id="columns"></div>
 
@@ -543,7 +544,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="columns">
 
      <article>
 
@@ -624,7 +625,7 @@
 
     <!-- ECONOMIE -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="economie">
 
      <div class="anchor" id="economie"></div>
 
@@ -645,7 +646,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="economie">
 
      <article>
 
@@ -728,7 +729,7 @@
 
     <!-- KUNST & MEDIA -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="kunst-media">
 
      <div class="anchor" id="kunst-media"></div>
 
@@ -748,7 +749,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="kunst-media">
 
      <article>
 
@@ -829,7 +830,7 @@
 
     <!-- PODCASTS -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="podcasts">
 
      <div class="anchor" id="podcasts"></div>
 
@@ -849,7 +850,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="podcasts">
 
      <article>
 
@@ -930,7 +931,7 @@
 
     <!-- POLITIEK -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="politiek">
 
      <div class="anchor" id="politiek"></div>
 
@@ -950,7 +951,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="politiek">
 
      <article>
 
@@ -1032,7 +1033,7 @@
 
     <!-- WETENSCHAP -->
 
-    <div class="seperator_rubriek">
+    <div class="seperator_rubriek" rubriek="wetenschap">
 
      <div class="anchor" id="wetenschap"></div>
 
@@ -1053,7 +1054,7 @@
 
     </div>
 
-    <section class="section_articles_row">
+    <section class="section_articles_row" rubriek="wetenschap">
 
      <article>
 
@@ -1230,15 +1231,14 @@
     <h4>Rubrieken</h4>
 
     <ul>
-      <li><a href="#">Voorpagina</a></li>
-      <li><a href="#binnenland">Binnenland</a></li>
-      <li><a href="#buitenland">Buitenland</a></li>
-      <li><a href="#columns">Columns</a></li>
-      <li><a href="#economie">Economie</a></li>
-      <li><a href="#kunst-media">Kunst & Media</a></li>
-      <li><a href="#podcasts">Podcasts</a></li>
-      <li><a href="#politiek">Politiek</a></li>
-      <li><a href="#wetenschap">Wetenschap</a></li>
+      <li rubriek="binnenland"><a href="#binnenland">Binnenland</a></li>
+      <li rubriek="buitenland"><a href="#buitenland">Buitenland</a></li>
+      <li rubriek="columns"><a href="#columns">Columns</a></li>
+      <li rubriek="economie"><a href="#economie">Economie</a></li>
+      <li rubriek="kunst-media"><a href="#kunst-media">Kunst & Media</a></li>
+      <li rubriek="podcasts"><a href="#podcasts">Podcasts</a></li>
+      <li rubriek="politiek"><a href="#politiek">Politiek</a></li>
+      <li rubriek="wetenschap"><a href="#wetenschap">Wetenschap</a></li>
     </ul>
    </nav>
 

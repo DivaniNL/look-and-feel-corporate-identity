@@ -1,0 +1,90 @@
+body {
+ --color_binnenland: #6440E8;
+ --color_binnenland_l: #7A5CE8;
+
+ --color_buitenland: #2FA811;
+ --color_buitenland_l: #57C83B;
+
+ --color_columns: #E840B0;
+ --color_columns_l: #EB6EC2;
+
+ --color_economie: #C4C713;
+ --color_economie_l: #DADD1E;
+
+ --color_kunst-media: #F06D0F;
+ --color_kunst-media_l: #EF863B;
+
+ --color_podcasts: #0FD6F0;
+ --color_podcasts_l: #0A8E9F;
+
+ --color_politiek: #A840E8;
+ --color_politiek_l: #C17EEA;
+
+ --color_wetenschap: #13C75E;
+ --color_wetenschap_l: #40C276;
+}
+
+.seperator_rubriek, .section_articles_row[rubriek] {
+ /* General rubriek styles */
+ &:where([rubriek="binnenland"]) { --primary-color: var(--color_binnenland); --darkgrey: var(--color_binnenland_l); }
+ &:where([rubriek="buitenland"]) { --primary-color: var(--color_buitenland); --darkgrey: var(--color_buitenland_l); }
+ &:where([rubriek="columns"]) { --primary-color: var(--color_columns); --darkgrey: var(--color_columns_l); }
+ &:where([rubriek="economie"]) { --primary-color: var(--color_economie); --darkgrey: var(--color_economie_l); }
+ &:where([rubriek="kunst-media"]) { --primary-color: var(--color_kunst-media); --darkgrey: var(--color_kunst-media_l); }
+ &:where([rubriek="podcasts"]) { --primary-color: var(--color_podcasts); --darkgrey: var(--color_podcasts_l); }
+ &:where([rubriek="politiek"]) { --primary-color: var(--color_politiek); --darkgrey: var(--color_politiek_l); }
+ &:where([rubriek="wetenschap"]) { --primary-color: var(--color_wetenschap); --darkgrey: var(--color_wetenschap_l); }
+ article {
+   border: 1px solid var(--primary-color);
+   .content_article {
+    border-color: var(--primary-color);
+     .heading_article + .text_meta {
+       strong {
+         color: currentColor;
+       }
+     }
+   }
+ }
+}
+.seperator_rubriek {
+ > a.text_menu{
+  &:hover,
+  &:active,
+  &:focus {
+   background-color: var(--primary-color);
+   @media (min-width: 860px) {
+    background-color: var(--white);
+   }
+  }
+ }
+ .anchor:target + h2 + a.text_menu {
+  background-color: var(--primary-color);
+  @media (min-width: 860px){
+   background-color: var(--white);
+  }
+ }
+}
+header nav ul.primary-navigation li[rubriek], footer nav.footernav_left ul li[rubriek] {
+ position: relative;
+ &:where([rubriek="binnenland"]) { --primary-color: var(--color_binnenland);}
+ &:where([rubriek="buitenland"]) { --primary-color: var(--color_buitenland);}
+ &:where([rubriek="columns"]) { --primary-color: var(--color_columns);}
+ &:where([rubriek="economie"]) { --primary-color: var(--color_economie);}
+ &:where([rubriek="kunst-media"]) { --primary-color: var(--color_kunst-media);}
+ &:where([rubriek="podcasts"]) { --primary-color: var(--color_podcasts);}
+ &:where([rubriek="politiek"]) { --primary-color: var(--color_politiek);}
+ &:where([rubriek="wetenschap"]) { --primary-color: var(--color_wetenschap);}
+ &:before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  width: 2px;
+  height: 14px;
+  top: 50%;
+  background-color: var(--primary-color);
+  translate: 0 -50%;
+ }
+ & > a:not(.button_menu):after, & button:after {
+  background-color: var(--primary-color);
+ }
+}

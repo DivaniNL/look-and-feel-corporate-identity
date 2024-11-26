@@ -118,6 +118,7 @@ strong {
 }
 
 /* Base styling for articles */
+
 article {
  border: 1px solid var(--black);
  position: relative;
@@ -160,7 +161,6 @@ article {
   flex-direction: column;
  }
 }
-
 /* Black labels at bottom right of articles */
 .label_date {
  background-color: var(--black);
@@ -172,6 +172,7 @@ article {
  right: 0;
  text-transform: uppercase;
 }
+
 section, div, aside{
  position: relative;
  .anchor {
@@ -182,10 +183,78 @@ section, div, aside{
  }
  .anchor:target + h2 + a.text_menu {
   background-color: var(--black);
-  color: var(--white);
+   color: var(--white);
+   > svg {
+    > path {
+     fill: var(--white);
+    }
+   }
+   @media (min-width: 860px){
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding-left: 4rem;
+    > svg {
+     > path {
+      fill: var(--primary-color);
+     }
+    }
+   }
+ }
+}
+
+
+
+/* Seperators */
+.seperator_rubriek {
+ display: flex;
+ position: relative;
+ border-top: 5px solid var(--primary-color);
+ margin: 0 0 1.25rem;
+ > h2 {
+  display: flex;
+  align-items: center;
+  line-height: 150%;
+  color: white;
+  text-transform: uppercase;
+  padding: 13px 11px;
+  background: var(--primary-color);
+ }
+ > a.text_menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+  justify-content: flex-end;
+  letter-spacing: 1px;
+  padding-right: 4px;
+  font-weight: bold;
+  transition: none;
   > svg {
-   > path {
-    fill: var(--white);
+   width: 25px;
+   height: 25px;
+   margin-left: 1rem;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+   background-color: var(--black);
+   color: var(--white);
+   > svg {
+    > path {
+     fill: var(--white);
+    }
+   }
+   @media (min-width: 860px){
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding-left: 4rem;
+    > svg {
+     > path {
+      fill: var(--primary-color);
+     }
+    }
    }
   }
  }

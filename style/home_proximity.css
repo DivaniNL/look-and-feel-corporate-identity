@@ -1,0 +1,11 @@
+body#redpersHome{
+
+ section.section_articles_row:not(:last-child), section.section_donations aside.frame_donation {
+
+  margin-bottom: 7.5rem;
+  @media (min-width: 860px){
+   margin-bottom: 13.125rem;
+  }
+
+ }
+}

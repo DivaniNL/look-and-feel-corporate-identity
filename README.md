@@ -1,20 +1,24 @@
 # Red Pers: Sprint 4. Look and Feel Corporate Identity
 
-Deze sprint heb ik op basis van de huisstijl, die te zien is in de artikelpagina op Figma, een home- en contactpagina ontworpen en ontwikkeld. Deze website is hier te bekijken:  
+Deze sprint heb ik op basis van de huisstijl, die te zien is in de artikelpagina op Figma, een home- en contactpagina ontworpen en ontwikkeld.
 
 # Beschrijving
 
 Ik heb een mobile-first, toegankelijke website gemaakt met behulp van HTML, CSS en JS.  
-<img width="1425" alt="Schermafbeelding 2024-11-27 om 10 31 45" src="https://github.com/user-attachments/assets/8c74c1ca-24eb-40e0-be59-550939f3ef0e">
+Desktop  
+<img width="1425" alt="Schermafbeelding 2024-11-27 om 10 31 45" src="https://github.com/user-attachments/assets/8c74c1ca-24eb-40e0-be59-550939f3ef0e">  
+Mobiel:  
+![Schermopname (905)](https://github.com/user-attachments/assets/f35593a3-1401-4a26-9a5c-bffe485b5110)
 
 Hieronder is de website te zien:  
 [Red Pers: Sprint 4. Look and Feel Corporate Identity](https://divaninl.github.io/look-and-feel-corporate-identity/)
+
 
 # Kenmerken
 
 ## Strategie  
 
-Samen met het groepje van Red Pers heb ik in de analysefase bedacht hoe deze pagina's eruit moesten komen te zien. Dit hebben we tijdens de Sprint Review gedaan. Hieronder zijn onze schetsen te zien:  
+Samen met het groepje van Red Pers heb ik in de analysefase bedacht hoe deze pagina's eruit moesten komen te zien. Dit hebben we tijdens de Sprint Review gedaan.
 
 ### Hoofdpagina
 
@@ -147,14 +151,14 @@ Ik heb  variaties bedacht voor drie gestalt wetten.
 **Proximity**  
 [Gestalt Principles of Design — Proximity, by Christopher Butler](https://www.chrbutler.com/gestalt-principles-of-design-proximity/)
 
-**Common Region**
+**Common Region**  
 [The Principle of Common Region: Containers Create Groupings, by Aurora Harley](https://www.nngroup.com/articles/common-region/)
 
-Hier zijn mijn ontwerpen te zien:
-https://www.figma.com/proto/Zlg5s0eUxwUoepbbYbSX2u/Look-and-Feel-SPRINT-4?page-id=2083%3A10&node-id=2088-594&node-type=canvas&viewport=-266%2C2171%2C0.34&t=GVs4eJUOHDNPd390-1&scaling=min-zoom&content-scaling=fixed
-Slide 1: Originele hoofdpagina gemaakt vorig weekend
-Slide 2: Hoofdpagina waarom Similarity Gestalt wet is gebruikt.
-Slide 3: Hoofdpagina waarom Proximity Gestalt wet is gebruikt.
+Hier zijn mijn ontwerpen te zien:  
+https://www.figma.com/proto/Zlg5s0eUxwUoepbbYbSX2u/Look-and-Feel-SPRINT-4?page-id=2083%3A10&node-id=2088-594&node-type=canvas&viewport=-266%2C2171%2C0.34&t=GVs4eJUOHDNPd390-1&scaling=min-zoom&content-scaling=fixed  
+Slide 1: Originele hoofdpagina 
+Slide 2: Hoofdpagina waarom Similarity Gestalt wet is gebruikt.  
+Slide 3: Hoofdpagina waarom Proximity Gestalt wet is gebruikt.  
 Slide 2: Hoofdpagina waarom Common Region Gestalt wet is gebruikt.
 
 ### Bij red pers variatie in Similarity:
@@ -183,9 +187,9 @@ Door deze lijn is het makkelijker te zien dat de seperator die boven de artikels
 
 ## Bronnen
 
-[Onderzoek naar het input event, wat triggered als je input veranderd is](https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event)
-[Onderzoek naar het invalid event, wat triggered als je input niet valide is](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event)
-[Onderzoek naar het valueMissing event, wat triggered als je required input niet gevuld is](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/valueMissing)
+[Onderzoek naar het input event, wat triggered als je input veranderd is](https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event)  
+[Onderzoek naar het invalid event, wat triggered als je input niet valide is](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event)  
+[Onderzoek naar het valueMissing event, wat triggered als je required input niet gevuld is](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/valueMissing)  
 [Onderzoek naar het valueMissing event, wat triggered als je input niet matched met de regex](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/typeMismatch)
 
 ## Licentie

@@ -1,0 +1,283 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+ <meta charset="UTF-8">
+ <link rel="icon" sizes="32x32" href="./favicon.ico">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Red Pers</title>
+ <meta name="description" content="Welkom bij Red Pers">
+ <!-- Red Pers Algemene Stylesheet -->
+ <link rel="stylesheet" href="https://divaninl.github.io/redpers-styleguide/redpers.css"> 
+ <!--  -->
+ <link rel="stylesheet" href="style/styles.css">
+ <link rel="stylesheet" href="style/contact.css">
+ <script src="./scripts/script.js" defer></script>
+ <script src="./scripts/formattedDate.js" defer></script>
+ <script src="./scripts/contact.js" defer></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+  rel="stylesheet">
+</head>
+
+<body id="redpersContact">
+  <noscript>
+    <style type="text/css">
+
+      .tagline{display: none !important;}
+      header + main{margin-top: 0 !important;}
+      .openSearchPopupButton{display: none !important;}
+
+      @media (min-width: 860px) {
+
+        body header a.logo {
+
+          top: calc(1.5rem + 37px);
+            
+        }
+      }
+
+    </style>
+  </noscript>
+ <a class="skip-to-content-link" href="#content">
+  Skip to content
+ </a>
+ <header>
+  <div class="tagline">
+   <p><strong id="formattedDate"></strong></p>
+   <p>voor de journalisten</p>
+  </div>
+  <input id="menu-toggle" class="hamburger" aria-label="Mobile-menu" role="checkbox" type="checkbox" tabindex="1" />
+
+  <label for="menu-toggle">
+   <svg aria-label="Open mobiele menu" id="menu-closed" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+    viewBox="0 0 36 36" fill="none">
+    <rect width="36" height="36" fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+     d="M9.75 10.5C9.75 10.0858 10.0858 9.75 10.5 9.75H25.5C25.9142 9.75 26.25 10.0858 26.25 10.5C26.25 10.9142 25.9142 11.25 25.5 11.25H10.5C10.0858 11.25 9.75 10.9142 9.75 10.5ZM9.75 18C9.75 17.5858 10.0858 17.25 10.5 17.25H25.5C25.9142 17.25 26.25 17.5858 26.25 18C26.25 18.4142 25.9142 18.75 25.5 18.75H10.5C10.0858 18.75 9.75 18.4142 9.75 18ZM9.75 25.5C9.75 25.0858 10.0858 24.75 10.5 24.75H25.5C25.9142 24.75 26.25 25.0858 26.25 25.5C26.25 25.9142 25.9142 26.25 25.5 26.25H10.5C10.0858 26.25 9.75 25.9142 9.75 25.5Z"
+     fill="black" />
+   </svg>
+   <svg aria-label="Sluit Mobiele menu" id="menu-opened" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+    viewBox="0 0 36 36" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+     d="M9.96967 26.0303C9.67678 25.7374 9.67678 25.2626 9.96967 24.9697L24.9697 9.96967C25.2626 9.67678 25.7374 9.67678 26.0303 9.96967C26.3232 10.2626 26.3232 10.7374 26.0303 11.0303L11.0303 26.0303C10.7374 26.3232 10.2626 26.3232 9.96967 26.0303Z"
+     fill="black"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+     d="M9.96967 9.96967C10.2626 9.67678 10.7374 9.67678 11.0303 9.96967L26.0303 24.9697C26.3232 25.2626 26.3232 25.7374 26.0303 26.0303C25.7374 26.3232 25.2626 26.3232 24.9697 26.0303L9.96967 11.0303C9.67678 10.7374 9.67678 10.2626 9.96967 9.96967Z"
+     fill="black"></path>
+   </svg>
+  </label>
+  <a href="./index.html" class="logo" tabindex="2">
+   <img src="./assets/RedPers_Logo.webp" alt="Logo van Red Pers">
+  </a>
+  <button class="search-icon openSearchPopupButton" tabindex="4" aria-label="Search">Zoeken
+   <svg aria-label="Icoon van vergrootglas" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+    viewBox="0 0 36 36" fill="none">
+    <path
+     d="M29.7576 29.7C29.4645 29.9931 28.9892 29.9931 28.6961 29.7L19.8345 20.8385C19.0845 21.4769 18.222 21.9712 17.247 22.3212C16.272 22.6712 15.2922 22.8462 14.3076 22.8462C11.9051 22.8462 9.87178 22.0146 8.20765 20.3513C6.5435 18.6881 5.71143 16.6559 5.71143 14.2547C5.71143 11.8535 6.54304 9.81971 8.20626 8.15336C9.86949 6.48701 11.9017 5.65384 14.3029 5.65384C16.7041 5.65384 18.7379 6.4859 20.4042 8.15003C22.0706 9.81415 22.9037 11.8475 22.9037 14.25C22.9037 15.2923 22.7191 16.301 22.3499 17.276C21.9807 18.251 21.4961 19.0846 20.8961 19.7769L29.7576 28.6385C30.0508 28.9316 30.0508 29.4069 29.7576 29.7ZM14.3076 21.3462C16.298 21.3462 17.9783 20.6611 19.3484 19.2909C20.7186 17.9207 21.4037 16.2404 21.4037 14.25C21.4037 12.2596 20.7186 10.5793 19.3484 9.20914C17.9783 7.83894 16.298 7.15384 14.3076 7.15384C12.3172 7.15384 10.6369 7.83894 9.26673 9.20914C7.89655 10.5793 7.21146 12.2596 7.21146 14.25C7.21146 16.2404 7.89655 17.9207 9.26673 19.2909C10.6369 20.6611 12.3172 21.3462 14.3076 21.3462Z"
+     fill="black" />
+   </svg>
+  </button>
+
+  <nav>
+
+
+   <ul class="secondary-navigation topnav">
+    <li><a tabindex="1" href="">Colofon</a></li>
+    <li><a tabindex="1" href="">Over</a></li>
+    <li><a tabindex="1" href="">Meedoen</a></li>
+    <li><a tabindex="1" href="">Contact</a></li>
+   </ul>
+
+   <ul class="secondary-navigation middlenav">
+    <li><button tabindex="3" class="openNewsletterPopupButton">Nieuwsbrief</button></li>
+    <li><a class="button_menu" tabindex="3" href="https://bunq.me/redpersnl">Doneren</a></li>
+   </ul>
+   <ul class="primary-navigation">
+    <li><a href="./home.html">Voorpagina</a></li>
+    <li><a href="./home.html#binnenland">Binnenland</a></li>
+    <li><a href="./home.html#buitenland">Buitenland</a></li>
+    <li><a href="./home.html#columns">Columns</a></li>
+    <li><a href="./home.html#economie">Economie</a></li>
+    <li><a href="./home.html#kunst-media">Kunst & Media</a></li>
+    <li><a href="./home.html#podcasts">Podcasts</a></li>
+    <li><a href="./home.html#politiek">Politiek</a></li>
+    <li><a href="./home.html#wetenschap">Wetenschap</a></li>
+   </ul>
+  </nav>
+
+
+ </header>
+ <main id="content">
+
+  <div class="grid_giver">
+   <svg aria-hidden="true" class="shape_green mobile_hidden success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843"
+   preserveAspectRatio="none" fill="none">
+   <g class="filter-effect">
+    <!-- Half ellipse centered at the bottom -->
+    <path d="M 0 0 H 1000 V 800 A 500 150 0 0 1 0 100 Z" fill="#F4FBE9" ></path>
+   </g>
+
+   
+  </svg>
+   <div class="grid_receiver">
+
+    <section class="section_intro">
+
+     <h1>Bedankt</h1>
+     <p class="text_intro">
+      Bedankt voor het invullen van het formulier<br>Wij nemen contact met u op.
+     </p>
+
+    </section>
+
+    
+
+   </div>
+
+  </div>
+
+  <div class="popup" id="popup_search" data-popup="popup_search">
+   <h2>Zoeken</h2>
+   <form class="form_search" action="/search" method="GET">
+    <input type="text" name="q" placeholder="Search...">
+
+    <button type="submit" class="button_search">
+     <svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 512 512" height="25">
+      <path
+       d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+     </svg>
+    </button>
+   </form>
+   <button class="closePopUp"></button>
+  </div>
+
+  <div class="popup" id="popup_nieuwsbrief" data-popup="popup_nieuwsbrief">
+   <h2>Nieuwsbrief</h2>
+   <p>Elke drie weken houden we je op de hoogte van wat we schreven en wat we lazen in de Red Pers-nieuwsbrief.
+   </p>
+   <a class="button_subscribe" href="https://redpers.substack.com/">
+    <svg aria-hidden="true" class="e-font-icon-svg e-fas-external-link-alt" viewBox="0 0 512 512"
+     xmlns="http://www.w3.org/2000/svg">
+     <path
+      d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z">
+     </path>
+    </svg>
+    Schrijf je in!
+   </a>
+   <button class="closePopUp"></button>
+  </div>
+
+ </main>
+
+ <footer>
+
+  <h2 class="hidden_title">Inhoud van footer</h2>
+
+  <svg aria-hidden="true" class="shape_grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843"
+   preserveAspectRatio="none" fill="none">
+
+   <path d="M 0 843 H 1000 V 60 A 500 40 0 0 0 0 40 Z" fill="#F7F7F5"></path>
+
+   <defs>
+    <filter id="filter0_d_42_1069" x="-50" y="-50" width="1100" height="900" filterUnits="userSpaceOnUse"
+     color-interpolation-filters="sRGB">
+     <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+
+     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+      result="hardAlpha"></feColorMatrix>
+
+     <feOffset dy="4"></feOffset>
+
+     <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+
+     <feComposite in2="hardAlpha" operator="out"></feComposite>
+
+     <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+
+     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_42_1068"></feBlend>
+
+     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_42_1068" result="shape"></feBlend>
+    </filter>
+   </defs>
+  </svg>
+
+  <h3 class="hidden_title">Footermenu</h3>
+
+   <div class="grid_receiver">
+
+    <figure>
+     <img src="./assets/RedPers_Logo.webp" alt="Logo van Red Pers">
+    </figure>
+
+    <nav class="footernav footernav_left">
+     <h4>Rubrieken</h4>
+
+     <ul>
+      <li><a href="./home.html">Voorpagina</a></li>
+      <li><a href="./home.html#binnenland">Binnenland</a></li>
+      <li><a href="./home.html#buitenland">Buitenland</a></li>
+      <li><a href="./home.html#columns">Columns</a></li>
+      <li><a href="./home.html#economie">Economie</a></li>
+      <li><a href="./home.html#kunst-media">Kunst & Media</a></li>
+      <li><a href="./home.html#podcasts">Podcasts</a></li>
+      <li><a href="./home.html#politiek">Politiek</a></li>
+      <li><a href="./home.html#wetenschap">Wetenschap</a></li>
+     </ul>
+    </nav>
+
+    <nav class="footernav footernav_left_mid">
+     <h4>Navigatie</h4>
+
+     <ul>
+      <li><a href="">Colofon</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a target="_blank" href="https://bunq.me/redpersnl">Doneren</a></li>
+      <li><a href="">Meedoen</a></li>
+      <li><a href="">Over Red Pers</a></li>
+     </ul>
+    </nav>
+
+    <nav class="footernav footernav_right_mid">
+     <h4>Service</h4>
+
+     <ul>
+      <li><a href="">Tip de redactie</a></li>
+      <li><a href="">Meld een fout</a></li>
+     </ul>
+    </nav>
+
+    <nav class="footernav footernav_right">
+     <h4>Meer Red Pers</h4>
+
+     <ul>
+      <li><button class="openNewsletterPopupButton">Nieuwsbrief</button></li>
+      <li><a href="">LinkedIn</a></li>
+      <li><a href="">Facebook</a></li>
+      <li><a href="">Instagram</a></li>
+      <li><a href="">X(Twitter)</a></li>
+     </ul>
+    </nav>
+
+    <p class="copy">© 2024 Stichting Red Pers – Alle rechten voorbehouden</p>
+
+    <nav class="legal_nav">
+
+     <ul>
+      <li><a href="">Privacystatement</a></li>
+      <li><a href="">Cookiebeleid</a></li>
+      <li><a href="">Copyright</a></li>
+     </ul>
+
+    </nav>
+
+   </div>
+
+ </footer>
+ 
+</body>
+
+</html>

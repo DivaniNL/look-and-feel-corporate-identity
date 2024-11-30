@@ -8,9 +8,14 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Red Pers</title>
  <meta name="description" content="Welkom bij Red Pers">
- <link rel="stylesheet" href="https://divaninl.github.io/redpers-styleguide/redpers.css">
- <link rel="stylesheet" href="./style/styles.css">
+ <!-- Red Pers Algemene Stylesheet -->
+ <link rel="stylesheet" href="https://divaninl.github.io/redpers-styleguide/redpers.css"> 
+ <!--  -->
+ <link rel="stylesheet" href="style/styles.css">
+ <link rel="stylesheet" href="style/contact.css">
+ <script src="./scripts/script.js" defer></script>
  <script src="./scripts/formattedDate.js" defer></script>
+ <script src="./scripts/contact.js" defer></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link
@@ -18,7 +23,7 @@
   rel="stylesheet">
 </head>
 
-<body>
+<body id="redpersContact">
   <noscript>
     <style type="text/css">
 
@@ -84,7 +89,7 @@
     <li><a tabindex="1" href="">Colofon</a></li>
     <li><a tabindex="1" href="">Over</a></li>
     <li><a tabindex="1" href="">Meedoen</a></li>
-    <li><a tabindex="1" href="./contact.html">Contact</a></li>
+    <li><a tabindex="1" href="">Contact</a></li>
    </ul>
 
    <ul class="secondary-navigation middlenav">
@@ -107,20 +112,32 @@
 
  </header>
  <main id="content">
-  <div id="container">
-   <div class="grid_giver">
-    <div class="grid_receiver">
-      <div class="intro_page">
-      <h1 class="heading_article">Bekijk de pagina's</h1>
-      <a href="home.html" class="button_subscribe">Homepagina</a>
-      <a href="contact.html" class="button_subscribe">Contact</a>
-      <a href="home_similarity.html" class="button_subscribe">Homepagina met Gestalt Principe: Similarity</a>
-      <a href="home_proximity.html" class="button_subscribe">Homepagina met Gestalt Principe: Proximity</a>
-      <a href="home_common-region.html" class="button_subscribe">Homepagina met Gestalt Principe: Common Region</a>
-      </div>
 
-    </div>
+  <div class="grid_giver">
+   <svg aria-hidden="true" class="shape_green mobile_hidden success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843"
+   preserveAspectRatio="none" fill="none">
+   <g class="filter-effect">
+    <!-- Half ellipse centered at the bottom -->
+    <path d="M 0 0 H 1000 V 800 A 500 150 0 0 1 0 100 Z" fill="#F4FBE9" ></path>
+   </g>
+
+   
+  </svg>
+   <div class="grid_receiver">
+
+    <section class="section_intro">
+
+     <h1>Bedankt</h1>
+     <p class="text_intro">
+      Bedankt voor het invullen van het formulier<br>Wij nemen contact met u op.
+     </p>
+
+    </section>
+
+    
+
    </div>
+
   </div>
 
   <div class="popup" id="popup_search" data-popup="popup_search">
@@ -137,9 +154,11 @@
    </form>
    <button class="closePopUp"></button>
   </div>
+
   <div class="popup" id="popup_nieuwsbrief" data-popup="popup_nieuwsbrief">
    <h2>Nieuwsbrief</h2>
-   <p>Elke drie weken houden we je op de hoogte van wat we schreven en wat we lazen in de Red Pers-nieuwsbrief.</p>
+   <p>Elke drie weken houden we je op de hoogte van wat we schreven en wat we lazen in de Red Pers-nieuwsbrief.
+   </p>
    <a class="button_subscribe" href="https://redpers.substack.com/">
     <svg aria-hidden="true" class="e-font-icon-svg e-fas-external-link-alt" viewBox="0 0 512 512"
      xmlns="http://www.w3.org/2000/svg">
@@ -151,12 +170,16 @@
    </a>
    <button class="closePopUp"></button>
   </div>
+
  </main>
 
  <footer>
+
   <h2 class="hidden_title">Inhoud van footer</h2>
-  <svg class="shape_grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843" preserveAspectRatio="none"
-   fill="none">
+
+  <svg aria-hidden="true" class="shape_grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 843"
+   preserveAspectRatio="none" fill="none">
+
    <path d="M 0 843 H 1000 V 60 A 500 40 0 0 0 0 40 Z" fill="#F7F7F5"></path>
 
    <defs>
@@ -181,7 +204,9 @@
     </filter>
    </defs>
   </svg>
-  <h3 class="hidden_title">Footermenu</h2>
+
+  <h3 class="hidden_title">Footermenu</h3>
+
    <div class="grid_receiver">
 
     <figure>
@@ -209,7 +234,7 @@
 
      <ul>
       <li><a href="">Colofon</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="">Contact</a></li>
       <li><a target="_blank" href="https://bunq.me/redpersnl">Doneren</a></li>
       <li><a href="">Meedoen</a></li>
       <li><a href="">Over Red Pers</a></li>
@@ -240,14 +265,19 @@
     <p class="copy">© 2024 Stichting Red Pers – Alle rechten voorbehouden</p>
 
     <nav class="legal_nav">
+
      <ul>
       <li><a href="">Privacystatement</a></li>
       <li><a href="">Cookiebeleid</a></li>
       <li><a href="">Copyright</a></li>
      </ul>
+
     </nav>
+
    </div>
+
  </footer>
+ 
 </body>
 
 </html>
